@@ -10,7 +10,7 @@
 
   <div class="container">
 
-     <div class="row header">
+     <div class="row header text-center">
        <div class="col"> Formulario de Logueo</div>
      </div>
 
@@ -18,20 +18,24 @@
 
        <div class="col-1 col-sm-2 col-lg-4" > </div>
 
-       <div class="col-10 col-sm-8 col-lg-4 padding sombra" style="background-color:white;">
+       <div class="col-10 col-sm-8 col-lg-4 padding sombra" style="background-color:white;" onsubmit="return validacion()">
          <form action="loginProceso.php" method="post">
 
              <div class="form-group">
                <label for="usuario" >Ingresa tu usuario</label>
-               <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
+               <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Nombre de usuario" required>
              </div>
 
              <div class="form-group">
-               <label for="password1">Password</label>
-               <input type="password" class="form-control" id="password1" name="password1" placeholder="Ingresa tu contraseña" required>
+               <label for="password1">Ingresa tu Password</label>
+               <input type="password" class="form-control" id="password1" name="password1" placeholder="Contraseña" required>
              </div>
 
-             <button type="submit" class="btn btn-primary">Submit</button>
+              <div class="olvido">
+                <a href="#">Te olvidaste tu password?</a>
+              </div>
+
+             <button type="submit" class="btn btn-primary">Ingresa</button>
 
          </form>
        </div>
